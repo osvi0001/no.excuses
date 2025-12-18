@@ -17,7 +17,12 @@ import video from "../assets/images/noexcuses-video.mp4";
     </section>
     <section class="forside_hero">
       <video autoplay loop muted playsinline class="bg-clip">
-        <source src={video} type="video/mp4" loading="eager" />
+        <source
+          src={video}
+          type="video/mp4"
+          loading="eager"
+          fetchpriority="high"
+        />
       </video>
       <div class="hero_content">
         <div>
