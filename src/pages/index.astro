@@ -17,7 +17,7 @@ import video from "../assets/images/noexcuses-video.mp4";
     </section>
     <section class="forside_hero">
       <video autoplay loop muted playsinline class="bg-clip">
-        <source src={video} type="video/mp4" loading="lazy" />
+        <source src={video} type="video/mp4" loading="eager" />
       </video>
       <div class="hero_content">
         <div>
@@ -53,19 +53,20 @@ import video from "../assets/images/noexcuses-video.mp4";
         <div>
           <h3>OUR CONCEPT</h3>
           <p>
-            We train outside all year round - rain, wind or sun. No excuses. While most people stay
-            indoors, we choose fresh air, daylight and the streets of Copenhagen as our only
-            equipment. <br /> The benefits are countless, but most of all: we enjoy it.
+            We train outside all year round - rain, wind or sun. No excuses.
+            While most people stay indoors, we choose fresh air, daylight and
+            the streets of Copenhagen as our only equipment. <br /> The benefits are
+            countless, but most of all: we enjoy it.
             <br /><br />
-            We also offer company training for teams who want to move together, build energy and create
-            a stronger community at work.
+            We also offer company training for teams who want to move together, build
+            energy and create a stronger community at work.
           </p>
           <h3>HOW TO GET STARTED</h3>
           <p>
             1. Sign up and pick your bundle <br />
             2. Pick your session <br />
-            3. Just show up - bring yourself, a mat, a water bottle and, most importantly, a smile. We’ll
-            take care of the rest.
+            3. Just show up - bring yourself, a mat, a water bottle and, most importantly,
+            a smile. We’ll take care of the rest.
           </p>
 
           <a class="CTA_started" href="/signup">VIEW BUNDLES & GET STARTED</a>
@@ -80,8 +81,8 @@ import video from "../assets/images/noexcuses-video.mp4";
           <h2>A GOOD CAUSE</h2>
           <h3>Annual Charity Workout</h3>
           <p>
-            Once a year, we come together for a special workout supported by our sponsors. All
-            proceeds are donated to a chosen charity.
+            Once a year, we come together for a special workout supported by our
+            sponsors. All proceeds are donated to a chosen charity.
             <a href="/a-good-cause">READ MORE</a>
           </p>
         </div>
@@ -95,7 +96,10 @@ import video from "../assets/images/noexcuses-video.mp4";
       <section class="FAQ">
         <div>
           <h2>FREQUENTLY ASKED QUESTIONS</h2>
-          <p>Got questions? We’ve got answers! Here’s what our members usually ask.</p>
+          <p>
+            Got questions? We’ve got answers! Here’s what our members usually
+            ask.
+          </p>
         </div>
         <div>
           <Faq
@@ -415,7 +419,8 @@ import video from "../assets/images/noexcuses-video.mp4";
         current += increment;
 
         if (current < target) {
-          counter.textContent = Math.floor(current).toLocaleString("da-DK") + " KR.";
+          counter.textContent =
+            Math.floor(current).toLocaleString("da-DK") + " KR.";
           requestAnimationFrame(update);
         } else {
           counter.textContent = target.toLocaleString("da-DK") + " KR.";
